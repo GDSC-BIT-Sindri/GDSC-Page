@@ -4,7 +4,7 @@
 @import './navbar';
 @import './sidebar';
 @import './footer';
-@import './home';
+@import './pages';
 @import './animated';
 
 * {
@@ -89,13 +89,6 @@ b {
   color: $white;
 }
 
-.grid-center {
-  display: grid;
-  place-items: center;
-  height: 100%;
-  width: 100%;
-}
-
 // Card
 .card {
   padding: 0 0px 10px;
@@ -118,6 +111,10 @@ b {
 
   #image-testimonial-3 {
     background-image: url('../images/home-sponsors.jpg');
+  }
+
+  #event-image-1 {
+    background-image: url('../images//test.jpg');
   }
 
   @media (max-width: $tab) {
@@ -184,6 +181,19 @@ b {
 .fixed-top-container {
   position: absolute;
   top: 0;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-center {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .hgaps-sm {
@@ -286,6 +296,10 @@ b {
   }
 }
 
+.w-100 {
+  width: 100%;
+}
+
 // Row
 .row {
   display: flex;
@@ -337,5 +351,5 @@ b {
 
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 250ms ease-in;
+  transition: opacity 250ms ease-in-out;
 }

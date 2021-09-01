@@ -35,9 +35,8 @@ const Navbar = ({ navControl }) => {
         <nav className="collapse navbar__collapse">
           <ul className="navbar__nav ml-auto">
             <NavItem to="/">Home</NavItem>
-            <NavItem to="/">Home</NavItem>
-            <NavItem to="/">Home</NavItem>
-            <NavItem to="/">Home</NavItem>
+            <NavItem to="/events">Events</NavItem>
+            <NavItem to="/teams">Teams</NavItem>
             <BlueButton style={{ margin: '0 0 0 14px' }} link="/">
               Join Us
             </BlueButton>

@@ -22,6 +22,14 @@ export const H3 = ({ children, className, ...otherProps }) => {
   );
 };
 
+export const H4 = ({ children, className, ...otherProps }) => {
+  return (
+    <h3 {...otherProps} className={`heading4 ${className}`}>
+      {children}
+    </h3>
+  );
+};
+
 export const IconHead = ({ icon, text }) => {
   return (
     <div className="icon-header">
