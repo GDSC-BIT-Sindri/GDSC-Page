@@ -1,0 +1,44 @@
+$primary-blue: #346df1;
+$primary-black: #3c4858;
+$white: #ffffff;
+
+$font-xxl: 36px;
+$font-xl: 26px;
+$font-sm: 12px;
+$font-nm: 16px;
+$font-md: 17px;
+$font-snm: 15px;
+
+$desktop: 1960px;
+$md-laptop: 1440px;
+$sm-laptop: 1200px;
+$lg-tab: 1024px;
+$tab: 768px;
+$sm-tab: 570px;
+$sm-mobile: 360px;
+
+@mixin WIDTH {
+  @media (min-width: $sm-tab) {
+    max-width: 720px;
+  }
+  @media (min-width: $lg-tab) {
+    max-width: 960px;
+  }
+  @media (min-width: $sm-laptop) {
+    max-width: 1140px;
+  }
+}
+
+.heading1 {
+  font-size: 36px;
+  color: $primary-black;
+  font-weight: 700;
+  line-height: 54px;
+}
+
+.heading2 {
+  font-size: 26px;
+  color: $primary-black;
+  font-weight: 600;
+  line-height: 42px;
+}
