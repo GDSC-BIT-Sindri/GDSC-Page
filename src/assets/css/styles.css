@@ -124,14 +124,13 @@
   color: inherit;
   padding: 0.9375rem;
   font-weight: 400;
-  font-size: 12px;
   text-transform: uppercase;
   border-radius: 3px;
   line-height: 20px;
 }
 
 .navbar__nav .nav__item a {
-  font-size: 12px;
+  font-size: 15px;
   color: #3c4858;
   font-weight: 700;
 }
@@ -367,6 +366,7 @@
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 *::after {
@@ -742,5 +742,5 @@ b {
 
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 450ms ease-in-out;
 }

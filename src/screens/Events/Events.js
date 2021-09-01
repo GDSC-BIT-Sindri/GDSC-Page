@@ -1,5 +1,5 @@
 import { BlueButton } from '../../components/Buttons/Buttons';
-import { socials } from '../../components/Data/socials';
+import { mail } from '../../components/Data/socials';
 import { Col, Row } from '../../components/Row';
 import Section from '../../components/Section';
 import { H1, H3, H4, Para } from '../../components/Texts';
@@ -22,7 +22,7 @@ const Events = () => {
                 about the latest technologies. Interested in being a Speaker at
                 one of our events? Just drop us your Proposal.
               </Para>
-              <BlueButton className="vertical-gap" link={socials.email}>
+              <BlueButton className="vertical-gap" link={mail}>
                 Send Proposals
               </BlueButton>
             </div>

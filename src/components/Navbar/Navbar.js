@@ -1,8 +1,9 @@
 import { BlueButton } from '../Buttons/Buttons';
 import { NavItem } from './NavItem';
-import Logo from '../../assets/images/GDSC-Logo.png';
+import Logo from '../../assets/images/hllogo.png';
 import { AiOutlineAlignRight } from 'react-icons/ai';
 import { useEffect } from 'react';
+import { join } from '../Data/socials';
 
 const Navbar = ({ navControl }) => {
   useEffect(() => {
@@ -29,7 +30,7 @@ const Navbar = ({ navControl }) => {
       <div className="container">
         <div className="navabr__translate">
           <a className="navbar__brand" href="/">
-            <img height="50px" src={Logo} alt="DSC BIT" />
+            <img height="30px" src={Logo} alt="DSC BIT" />
           </a>
         </div>
         <nav className="collapse navbar__collapse">
@@ -37,7 +38,7 @@ const Navbar = ({ navControl }) => {
             <NavItem to="/">Home</NavItem>
             <NavItem to="/events">Events</NavItem>
             <NavItem to="/teams">Teams</NavItem>
-            <BlueButton style={{ margin: '0 0 0 14px' }} link="/">
+            <BlueButton style={{ margin: '0 0 0 14px' }} link={join}>
               Join Us
             </BlueButton>
           </ul>

@@ -13,6 +13,7 @@
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 
   &::after {
     box-sizing: border-box;
@@ -351,5 +352,5 @@ b {
 
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 450ms ease-in-out;
 }

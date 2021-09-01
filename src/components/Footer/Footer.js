@@ -7,7 +7,7 @@ import {
 } from 'react-icons/fa';
 import { PrimaryBlack, TextBlue } from '../../config/Color';
 import { FontSize } from '../../config/FontSize';
-import { socials } from '../Data/socials';
+import { college, guidelines, hncc, mail, socials } from '../Data/socials';
 import { Col, Row } from '../Row';
 import { SocialIcons } from './SocialIcons';
 
@@ -66,8 +66,8 @@ const Footer = () => {
                 <a style={{ fontSize: '18px', fontWeight: 600 }} href="/">
                   About Us
                 </a>
-                <a href="/">HnCC</a>
-                <a href="/">Meet the team</a>
+                <a href={hncc}>HnCC</a>
+                <a href="/teams">Meet the team</a>
               </div>
             </div>
           </Col>
@@ -75,7 +75,7 @@ const Footer = () => {
             <div className="detail__box">
               <h3>About BITS</h3>
               <div className="links">
-                <a style={{ fontSize: '18px', fontWeight: 600 }} href="/">
+                <a style={{ fontSize: '18px', fontWeight: 600 }} href={college}>
                   BIT Sindri
                 </a>
               </div>
@@ -85,9 +85,12 @@ const Footer = () => {
             <div className="detail__box">
               <h3>Other Links</h3>
               <div className="links">
-                <a href="/">Contact Us</a>
-                <a href="/">Call for Sponsors</a>
-                <a style={{ fontSize: '18px', fontWeight: 600 }} href="/">
+                <a href={mail}>Contact Us</a>
+                <a href={mail}>Call for Sponsors</a>
+                <a
+                  style={{ fontSize: '18px', fontWeight: 600 }}
+                  href={guidelines}
+                >
                   Community Guidelines
                 </a>
               </div>

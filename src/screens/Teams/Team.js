@@ -20,7 +20,7 @@ const Team = () => {
                 warm up your entire circle; needless to say that individuality
                 counts but teamwork dynamites. At{' '}
                 <a style={Styles.link} href="/">
-                  DSC HIT
+                  DSC BITS
                 </a>{' '}
                 celebrate teamwork and attribute the success of DSC to the
                 wonderful individuals who put untiring efforts for it.

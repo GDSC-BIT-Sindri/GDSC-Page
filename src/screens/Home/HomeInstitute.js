@@ -3,6 +3,8 @@ import Section from '../../components/Section';
 import { H3, Para } from '../../components/Texts';
 
 import Image from '../../assets/images/sindri-logo.png';
+import { college } from '../../components/Data/socials';
+import { SecondaryBlue } from '../../config/Color';
 
 const HomeInstitute = () => {
   return (
@@ -14,7 +16,11 @@ const HomeInstitute = () => {
           </div>
         </Col>
         <Col className="col-lg-6 vgaps-tab-sm">
-          <H3>BIT, Sindri</H3>
+          <H3>
+            <a href={college} style={{ color: SecondaryBlue }}>
+              BIT, Sindri
+            </a>
+          </H3>
           <Para className="vertical-gap">
             BIT Sindhri is affiliated to Jharkhand University of Technology
             (JUT), Hazaribag. The institute offers UG, PG and doctoral courses

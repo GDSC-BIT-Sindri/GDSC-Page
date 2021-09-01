@@ -12,7 +12,7 @@ import {
   FaInstagram,
   FaTelegramPlane,
 } from 'react-icons/fa';
-import { socials } from '../../components/Data/socials';
+import { join, socials } from '../../components/Data/socials';
 
 const ICON_SIZE = 20;
 
@@ -45,7 +45,7 @@ const HomeAbout = () => {
               industry experience.
             </Para>
 
-            <BlueButton>Join Us</BlueButton>
+            <BlueButton link={join}>Join Us</BlueButton>
 
             <div style={{ margin: '0.75rem 0 0.25rem' }}>
               <a
