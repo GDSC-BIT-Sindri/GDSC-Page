@@ -14,6 +14,14 @@ export const H2 = ({ children, className, ...otherProps }) => {
   );
 };
 
+export const H3 = ({ children, className, ...otherProps }) => {
+  return (
+    <h3 {...otherProps} className={`heading3 ${className}`}>
+      {children}
+    </h3>
+  );
+};
+
 export const IconHead = ({ icon, text }) => {
   return (
     <div className="icon-header">
@@ -31,4 +39,8 @@ export const Para = ({ children, className, ...otherProps }) => {
       {children}
     </p>
   );
+};
+
+export const Text3d = ({ children }) => {
+  return <h1 className="three-d gradient-text">{children}</h1>;
 };

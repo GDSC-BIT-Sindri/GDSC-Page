@@ -1,4 +1,4 @@
-export const Row = ({ children, className, ...otherProps }) => {
+export const Row = ({ children, className = '', ...otherProps }) => {
   return (
     <div {...otherProps} className={`row ${className}`}>
       {children}
@@ -6,7 +6,7 @@ export const Row = ({ children, className, ...otherProps }) => {
   );
 };
 
-export const Col = ({ children, className, ...otherProps }) => {
+export const Col = ({ children, className = '', ...otherProps }) => {
   return (
     <div {...otherProps} className={`col ${className}`}>
       {children}

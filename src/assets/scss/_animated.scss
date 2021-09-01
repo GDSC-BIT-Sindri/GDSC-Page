@@ -1,0 +1,30 @@
+.animated-box {
+  height: 120px;
+  width: 120px;
+  position: fixed;
+  border-radius: 25% 75% 24% 76% / 71% 32% 68% 29%;
+  animation: infinite 10s falling cubic-bezier(0.04, 0.34, 0.58, 0.82);
+  animation-delay: 1s;
+  background-color: #ed4b3d;
+  z-index: 1031;
+  box-shadow: 0 0 8px 2px rgba($color: #ed4b3d, $alpha: 0.45);
+
+  @media (max-width: $sm-tab) {
+    height: 55px;
+    width: 55px;
+  }
+}
+
+@keyframes falling {
+  0% {
+    top: -10%;
+    right: 7%;
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    top: 110%;
+    right: 7%;
+    transform: rotateZ(360deg);
+  }
+}
