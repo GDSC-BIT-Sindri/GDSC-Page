@@ -180,9 +180,10 @@
   left: -300px;
   transition: all 400ms ease-in-out;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   height: 100%;
+  flex-direction: column;
 }
 
 .sidebar__container .image {
@@ -191,6 +192,7 @@
   width: 100%;
   text-align: center;
   box-shadow: 0 2px 5px 1px rgba(221, 221, 221, 0.45);
+  margin-bottom: 2rem;
 }
 
 .sidebar__container .sidebar__content {
