@@ -2,7 +2,7 @@ import { Col, Row } from '../../components/Row';
 import Section from '../../components/Section';
 import { H1, H2, IconHead, Para } from '../../components/Texts';
 import { AiOutlineDingding } from 'react-icons/ai';
-import { PrimaryBlue, WBITSe } from '../../config/Color';
+import { PrimaryBlue, White } from '../../config/Color';
 import { BlueButton } from '../../components/Buttons/Buttons';
 import Image from '../../assets/images/home-about.webp';
 import {
@@ -32,7 +32,7 @@ const HomeAbout = () => {
       <Row className="vertical-gap">
         <Col className="col-lg-6">
           <IconHead
-            icon={<AiOutlineDingding color={WBITSe} size={28} />}
+            icon={<AiOutlineDingding color={White} size={28} />}
             text={'What we do ?'}
           />
           <div className="vertical-gap">
@@ -208,7 +208,7 @@ const styles = {
     borderRadius: '50%',
     backgroundColor: PrimaryBlue,
     marginRight: '0.85rem',
-    color: WBITSe,
+    color: White,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
