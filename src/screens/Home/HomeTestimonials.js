@@ -1,4 +1,4 @@
-import Card from '../../components/Card';
+import HomeCard from '../../components/HomeCard';
 import { HOME_TESTIMONIALS } from '../../components/Data/HomeDetails';
 import { Col, Row } from '../../components/Row';
 import Section from '../../components/Section';
@@ -9,8 +9,8 @@ function HomeTestimonials() {
       <Row>
         {HOME_TESTIMONIALS.map((item, index) => {
           return (
-            <Col className="col-lg-4" key={index}>
-              <Card
+            <Col className="col-lg-4 col-md-2" key={index}>
+              <HomeCard
                 title={item.title}
                 text={item.text}
                 button={item.button}

@@ -335,6 +335,13 @@ b {
       max-width: 67.777777%;
     }
   }
+
+  .col-md-2 {
+    @media (min-width: 768px) {
+      flex: 0 0 0.5;
+      max-width: 50%;
+    }
+  }
 }
 
 // section

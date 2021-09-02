@@ -10,6 +10,12 @@
   box-shadow: 0 0 8px 2px rgba($color: #ed4b3d, $alpha: 0.45);
   top: -20%;
   right: 7%;
+
+  @media (max-width: $tab) {
+    height: 75px;
+    width: 75px;
+  }
+
   @media (max-width: $sm-tab) {
     height: 55px;
     width: 55px;

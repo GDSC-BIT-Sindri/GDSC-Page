@@ -1,7 +1,7 @@
 import { BlueButton } from './Buttons/Buttons';
 import { H3, Para } from './Texts';
 
-const Card = ({ button, link, title, text, image }) => {
+const HomeCard = ({ button, link, title, text, image }) => {
   return (
     <div className="card">
       <div id={image} className="card__image"></div>
@@ -16,4 +16,4 @@ const Card = ({ button, link, title, text, image }) => {
   );
 };
 
-export default Card;
+export default HomeCard;

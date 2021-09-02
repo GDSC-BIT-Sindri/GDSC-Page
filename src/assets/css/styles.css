@@ -340,6 +340,13 @@
   right: 7%;
 }
 
+@media (max-width: 768px) {
+  .animated-box {
+    height: 75px;
+    width: 75px;
+  }
+}
+
 @media (max-width: 570px) {
   .animated-box {
     height: 55px;
@@ -709,6 +716,13 @@ b {
   .row .col-lg-8 {
     flex: 0 0 65.777777%;
     max-width: 67.777777%;
+  }
+}
+
+@media (min-width: 768px) {
+  .row .col-md-2 {
+    flex: 0 0 0.5;
+    max-width: 50%;
   }
 }
 
