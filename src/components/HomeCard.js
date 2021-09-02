@@ -3,8 +3,8 @@ import { H3, Para } from './Texts';
 
 const HomeCard = ({ button, link, title, text, image }) => {
   return (
-    <div className="card">
-      <div id={image} className="card__image"></div>
+    <div className="card z-push-back">
+      <div id={image} className="card__image z-push-back"></div>
       <H3 className="hgaps-sm">{title}</H3>
       <div className="card__detail hgaps-sm vertical-gap-sm">
         <Para>{text}</Para>

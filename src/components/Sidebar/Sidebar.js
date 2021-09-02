@@ -3,7 +3,7 @@ import Image from '../../assets/images/Logo-with-name.png';
 import { NavItem } from '../Navbar/NavItem';
 import { BsFillPeopleFill, BsFillInfoSquareFill } from 'react-icons/bs';
 
-const Sidebar = ({ open }) => {
+const Sidebar = ({ open, setClose }) => {
   return (
     <section className={`sidebar ${open ? 'sidebar-show' : ''} `}>
       <div className={`sidebar__container ${open ? 'show-content' : ''}`}>
@@ -12,15 +12,15 @@ const Sidebar = ({ open }) => {
         </div>
         <div className="sidebar__content">
           <ul className="sidebar__links">
-            <NavItem to="/">
+            <NavItem onClick={setClose} to="/">
               <AiFillHome style={{ marginRight: '0.5rem' }} />
               <p>Home</p>
             </NavItem>
-            <NavItem to="/events">
+            <NavItem onClick={setClose} to="/events">
               <BsFillInfoSquareFill style={{ marginRight: '0.5rem' }} />
               Events
             </NavItem>
-            <NavItem to="/teams">
+            <NavItem onClick={setClose} to="/teams">
               <BsFillPeopleFill style={{ marginRight: '0.5rem' }} />
               Teams
             </NavItem>

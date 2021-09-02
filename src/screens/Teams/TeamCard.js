@@ -5,34 +5,13 @@ import { SecondaryBlue } from '../../config/Color';
 const TeamCard = ({ data }) => {
   return (
     <Col className="col-lg-4 vertical-gap">
-      <Row>
+      <Row className="text-center-tab">
         <Col className="col-lg-4 no-hgaps">
-          <img
-            style={{ width: '100px', height: '100px', borderRadius: '50%' }}
-            src={data.image}
-            alt={data.name}
-          />
+          <img style={Styles.image} src={data.image} alt={data.name} />
         </Col>
         <Col className="col-lg-8">
-          <h4
-            style={{
-              fontSize: '1.25rem',
-              color: SecondaryBlue,
-              fontWeight: 700,
-            }}
-          >
-            {data.name}
-          </h4>
-          <h4
-            style={{
-              fontSize: '1.1rem',
-              color: '#3C4858',
-              margin: '0.25rem 0 0.75rem',
-              fontWeight: 400,
-            }}
-          >
-            {data.title}
-          </h4>
+          <h4 style={Styles.name}>{data.name}</h4>
+          <h4 style={Styles.title}>{data.title}</h4>
           <div style={Styles.row}>
             {data.github.lenghth ? (
               <FaGithub
@@ -64,4 +43,16 @@ const Styles = {
     flexWrap: 'nowrap',
   },
   icon: { margin: '0 0.45rem', cursor: 'pointer' },
+  image: { width: '100px', height: '100px', borderRadius: '50%' },
+  name: {
+    fontSize: '1.25rem',
+    color: SecondaryBlue,
+    fontWeight: 700,
+  },
+  title: {
+    fontSize: '1.1rem',
+    color: '#3C4858',
+    margin: '0.25rem 0 0.75rem',
+    fontWeight: 400,
+  },
 };

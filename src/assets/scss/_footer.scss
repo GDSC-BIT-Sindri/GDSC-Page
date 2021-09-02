@@ -67,6 +67,10 @@
           color: $primary-black;
           font-size: 17px;
           font-weight: 500;
+
+          @media (max-width: $tab) {
+            width: fit-content;
+          }
         }
       }
     }
@@ -85,6 +89,10 @@
       .copyright {
         @media (max-width: $sm-tab) {
           margin-top: 0.75rem;
+
+          p {
+            font-size: 0.75rem;
+          }
         }
       }
     }

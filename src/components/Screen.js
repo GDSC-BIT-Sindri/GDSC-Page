@@ -12,7 +12,7 @@ const Screen = ({ children }) => {
           setOpenSiderbar((setOpenSiderbar) => !setOpenSiderbar)
         }
       />
-      <Sidebar open={openSidebar} />
+      <Sidebar setClose={() => setOpenSiderbar(false)} open={openSidebar} />
       {children}
       <Footer />
     </>

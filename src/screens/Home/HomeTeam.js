@@ -11,7 +11,7 @@ const HomeTeam = () => {
   return (
     <Section>
       <Row>
-        <Col className="col-lg-6">
+        <Col className="col-lg-6 z-push-back">
           <div>
             <img width="100%" src={Image} alt="GDSC BITS" />
           </div>

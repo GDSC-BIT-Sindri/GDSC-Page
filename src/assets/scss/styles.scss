@@ -261,6 +261,12 @@ b {
   text-align: center;
 }
 
+.text-center-tab {
+  @media (max-width: $tab) {
+    text-align: center;
+  }
+}
+
 .vertical-gap-sm {
   margin: 1.2rem 0;
 }
@@ -299,6 +305,10 @@ b {
 
 .w-100 {
   width: 100%;
+}
+
+.z-push-back {
+  z-index: -10;
 }
 
 // Row

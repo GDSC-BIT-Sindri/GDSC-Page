@@ -6,7 +6,7 @@
   animation: infinite 10s falling cubic-bezier(0.04, 0.34, 0.58, 0.82);
   animation-delay: 1s;
   background-color: #ed4b3d;
-  z-index: 1031;
+  z-index: -1;
   box-shadow: 0 0 8px 2px rgba($color: #ed4b3d, $alpha: 0.45);
   top: -20%;
   right: 7%;
