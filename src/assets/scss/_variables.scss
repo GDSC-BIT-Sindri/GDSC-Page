@@ -72,6 +72,7 @@ $sm-mobile: 360px;
   color: #f5f5f5;
   letter-spacing: 10px;
   font-size: 8rem;
+  animation: popup infinite 5s ease-in-out;
   text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
     1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
     1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
@@ -99,8 +100,58 @@ $sm-mobile: 360px;
   }
 }
 
-// .gradient-text {
-//   background: linear-gradient(90deg, #00dbde, #fc00ff);
-//   backface-visibility: hidden;
-//   background-clip: text;
-// }
+@keyframes popup {
+  0% {
+    color: #fff;
+    text-shadow: none;
+    // text-shadow: 0px 0px 0px #919191, 0px 0px 0px #919191, 0px 0px 0px #919191,
+    //   0px 0px 0px #919191, 0px 0px 0px #919191, 0px 0px 0px #919191,
+    //   0px 0px 0px #919191, 0px 0px 0px #919191, 0px 0px 0px #919191,
+    //   0px 0px 0px #919191, 0px 0px 0px rgba(16, 16, 16, 0.4),
+    //   0px 0px 0px rgba(16, 16, 16, 0.2), 0px 0px 0px rgba(16, 16, 16, 0.2),
+    //   0px 0px 0px rgba(16, 16, 16, 0.4);
+  }
+
+  50% {
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+      1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+      1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+      1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+      1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+      1px 30px 60px rgba(16, 16, 16, 0.4);
+  }
+  100% {
+    color: #fff;
+    text-shadow: none;
+    // text-shadow: 0px 0px 0px #919191, 0px 0px 0px #919191, 0px 0px 0px #919191,
+    //   0px 0px 0px #919191, 0px 0px 0px #919191, 0px 0px 0px #919191,
+    //   0px 0px 0px #919191, 0px 0px 0px #919191, 0px 0px 0px #919191,
+    //   0px 0px 0px #919191, 0px 0px 0px rgba(16, 16, 16, 0.4),
+    //   0px 0px 0px rgba(16, 16, 16, 0.2), 0px 0px 0px rgba(16, 16, 16, 0.2),
+    //   0px 0px 0px rgba(16, 16, 16, 0.4);
+  }
+}
+
+@keyframes popup-sm {
+  0% {
+  }
+}
+
+.gradient-text {
+  background: rgb(234, 67, 53);
+  background: linear-gradient(
+    90deg,
+    rgba(234, 67, 53, 1) 0%,
+    rgba(52, 168, 83, 1) 36%,
+    rgba(66, 133, 244, 1) 68%,
+    rgba(251, 188, 4, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  h1 {
+    font-size: 2rem;
+    font-family: 'Pacifico';
+  }
+}

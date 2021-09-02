@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { PrimaryBlack, PrimaryBlue } from '../../config/Color';
+import { PrimaryBlue } from '../../config/Color';
 
 export const NavItem = ({ children, to, ...otherProps }) => {
   return (
@@ -15,5 +15,4 @@ const ROW = {
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
-  color: PrimaryBlack,
 };

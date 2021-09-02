@@ -43,6 +43,7 @@
   color: #f5f5f5;
   letter-spacing: 10px;
   font-size: 8rem;
+  animation: popup infinite 5s ease-in-out;
   text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
 }
 
@@ -71,6 +72,38 @@
   .three-d {
     font-size: 8rem;
   }
+}
+
+@keyframes popup {
+  0% {
+    color: #fff;
+    text-shadow: none;
+  }
+  50% {
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+  }
+  100% {
+    color: #fff;
+    text-shadow: none;
+  }
+}
+
+@keyframes popup-sm {
+  0% {
+  }
+}
+
+.gradient-text {
+  background: #ea4335;
+  background: linear-gradient(90deg, #ea4335 0%, #34a853 36%, #4285f4 68%, #fbbc04 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text h1 {
+  font-size: 2rem;
+  font-family: 'Pacifico';
 }
 
 .navbar {
@@ -365,6 +398,13 @@
   }
 }
 
+.animated-circle {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  position: fixed;
+}
+
 @keyframes falling {
   0% {
     top: -10%;
@@ -398,6 +438,7 @@
 a {
   text-decoration: none;
   background-color: transparent;
+  color: inherit;
 }
 
 b {

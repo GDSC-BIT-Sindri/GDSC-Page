@@ -21,7 +21,7 @@ const Navbar = ({ navControl }) => {
     });
 
     return () => document.removeEventListener('scroll', null);
-  });
+  }, []);
   return (
     <nav
       id="navbar"

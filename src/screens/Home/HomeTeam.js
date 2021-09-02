@@ -21,7 +21,7 @@ const HomeTeam = () => {
           <div className="vertical-gap">
             <Para>
               These are the amazing bunch of people who make the community what
-              it is. Who are the Backbone of Developer Student Club, HIT and
+              it is. Who are the Backbone of Developer Student Club, BITS and
               ensure that we can forge ahead #WhateverItTakes! <br /> <br />
               They take the time out from their daily grind to give back to the
               members and empower them to become bigger (Metaphorically). And

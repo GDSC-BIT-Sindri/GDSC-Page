@@ -15,7 +15,7 @@ const HomePartner = () => {
           <div className="vertical-gap">
             <Para>
               Thank you to our Partners for their support towards the community.
-              If you want to be showcased through DSC HIT, contact{' '}
+              If you want to be showcased through DSC BITS, contact{' '}
               <a href={mail} style={Styles.link}>
                 Here
               </a>{' '}

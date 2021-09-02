@@ -2,7 +2,7 @@ import { Col, Row } from '../../components/Row';
 import Section from '../../components/Section';
 import { H1, H2, IconHead, Para } from '../../components/Texts';
 import { AiOutlineDingding } from 'react-icons/ai';
-import { PrimaryBlue, White } from '../../config/Color';
+import { PrimaryBlue, WBITSe } from '../../config/Color';
 import { BlueButton } from '../../components/Buttons/Buttons';
 import Image from '../../assets/images/home-about.webp';
 import {
@@ -32,7 +32,7 @@ const HomeAbout = () => {
       <Row className="vertical-gap">
         <Col className="col-lg-6">
           <IconHead
-            icon={<AiOutlineDingding color={White} size={28} />}
+            icon={<AiOutlineDingding color={WBITSe} size={28} />}
             text={'What we do ?'}
           />
           <div className="vertical-gap">
@@ -71,8 +71,8 @@ const HomeAbout = () => {
 
             <div className="vertical-gap-sm">
               <Para>
-                Developer Student Club HIT is inspired by the Google Developers'
-                Family.
+                Developer Student Club BITS is inspired by the Google
+                Developers' Family.
                 <br />
                 The motive is to create a local ecosystem of Developers in and
                 around the Campus. And having fun doing it.
@@ -208,7 +208,7 @@ const styles = {
     borderRadius: '50%',
     backgroundColor: PrimaryBlue,
     marginRight: '0.85rem',
-    color: White,
+    color: WBITSe,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',

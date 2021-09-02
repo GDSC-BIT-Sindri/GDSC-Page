@@ -17,7 +17,7 @@ const Events = () => {
             <H1>Events</H1>
             <div className="vertical-gap">
               <Para>
-                Here at DSC HIT we put the fun in functions and events. Attend
+                Here at DSC BITS we put the fun in functions and events. Attend
                 Study Jams/ Hackathons/ Developer Conferences to learn more
                 about the latest technologies. Interested in being a Speaker at
                 one of our events? Just drop us your Proposal.
