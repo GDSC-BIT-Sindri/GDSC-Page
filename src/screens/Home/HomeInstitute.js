@@ -15,13 +15,13 @@ const HomeInstitute = () => {
             <img src={Image} alt="BIT Sindri" />
           </div>
         </Col>
-        <Col className="col-lg-6 vgaps-tab-sm">
+        <Col className="col-lg-6 vgaps-tab-sm" style={{alignSelf: 'center'}}>
           <H3>
             <a href={college} style={{ color: SecondaryBlue }}>
               BIT, Sindri
             </a>
           </H3>
-          <Para className="vertical-gap">
+          <Para className="vertical-gap" style={{ margin: '1rem 0 .5rem' }}>
             BIT Sindhri is affiliated to Jharkhand University of Technology
             (JUT), Hazaribag. The institute offers UG, PG and doctoral courses
             in engineering stream. All the courses are approved by All India

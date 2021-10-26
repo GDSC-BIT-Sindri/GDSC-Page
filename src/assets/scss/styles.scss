@@ -84,11 +84,17 @@ b {
 .btn__telegram {
   background-color: #20a0e1;
   color: $white;
+  display: flex;
+  align-items: center;
+  width: fit-content;
 }
 
 .btn__discord {
   background-color: #2c2f33;
   color: $white;
+  display: flex;
+  align-items: center;
+  width: fit-content;
 }
 
 // Card
@@ -310,6 +316,7 @@ b {
 
 .z-push-back {
   z-index: -10;
+  // height: 100%;
 }
 
 // Row
