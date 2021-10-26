@@ -1,10 +1,9 @@
 export const socials = {
-  facebook: 'https://www.google.com',
-  instagram: 'https://www.google.com',
-  telegram: 'https://www.google.com',
-  discord: 'https://www.google.com',
-  github: 'https://www.google.com',
-  email: 'ashraf2k1zeeshan@gmail.com',
+  facebook: 'https://m.facebook.com/gdscbitsindri',
+  linkedin: 'https://www.linkedin.com/company/gdsc-bit-sindri',
+  instagram: 'https://www.instagram.com/gdsc.bitsindri/',
+  github: 'https://github.com/orgs/GDSC-BIT-Sindri/dashboard',
+  email: 'mailto:gdsc.bitsindri@gmail.com',
 };
 
 export const mail = 'mailto:ashraf2k1zeeshan@gmail.com';

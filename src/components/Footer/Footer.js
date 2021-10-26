@@ -2,8 +2,8 @@ import {
   FaFacebookF,
   FaGithub,
   FaInstagram,
-  FaTelegramPlane,
-  FaDiscord,
+  FaLinkedin,
+  FaGooglePlusG,
 } from 'react-icons/fa';
 import { PrimaryBlack, TextBlue } from '../../config/Color';
 import { FontSize } from '../../config/FontSize';
@@ -37,11 +37,11 @@ const Footer = () => {
               <SocialIcons link={socials.github}>
                 <FaGithub size={SIZE} />
               </SocialIcons>
-              <SocialIcons link={socials.telegram}>
-                <FaTelegramPlane size={SIZE} />
+              <SocialIcons link={socials.linkedin}>
+                <FaLinkedin size={SIZE} />
               </SocialIcons>
-              <SocialIcons link={socials.discord}>
-                <FaDiscord size={SIZE} />
+              <SocialIcons link={socials.email}>
+                <FaGooglePlusG size={SIZE} />
               </SocialIcons>
             </div>
           </Col>
